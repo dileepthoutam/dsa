@@ -9,6 +9,23 @@ const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
 
+struct TreeNode {
+public:
+	int val;
+	TreeNode* left;
+	TreeNode* right;
+	TreeNode(int val) {
+		this->val = val;
+		this->left = nullptr;
+		this->right = nullptr;
+	}
+};
+
+bool is_valid_bst(TreeNode* root) {
+	if (root == nullptr)
+		return true;
+}
+
 void solve() {
 
 }

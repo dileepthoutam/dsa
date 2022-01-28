@@ -9,8 +9,16 @@ const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
 
-void solve() {
+int maximum_product(vector<int>& nums) {
 
+}
+
+void solve() {
+	int n; cin >> n;
+	vector<int> arr(n);
+
+	for(auto &x: arr)
+		cin >> x;
 }
 
 int32_t main() {

@@ -3,11 +3,15 @@ using namespace std;
 
 #define int long long 
 #define ar array
-#define endl '\n'
 
 const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
+
+
+int binary_search(vector<int>& arr, int target) {
+
+}
 
 void solve() {
 
@@ -16,7 +20,6 @@ void solve() {
 int32_t main() {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
-	srand(time(0));
 
 	int tc=1;
 	// cin >> tc;
@@ -28,5 +31,4 @@ int32_t main() {
 
 	return 0;
 }
-
 

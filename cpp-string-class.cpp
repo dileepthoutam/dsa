@@ -3,14 +3,14 @@ using namespace std;
 
 #define int long long 
 #define ar array
-#define endl '\n'
 
 const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
 
 void solve() {
-
+	string a; cin >> a;
+	cout << a.size() << "\n";
 }
 
 int32_t main() {
