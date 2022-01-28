@@ -9,7 +9,7 @@ const int mod = 1e9 + 7;
 const int inf = 1e18;
 
 void solve() {
-
+	cout << "test\n";
 }
 
 int32_t main() {
