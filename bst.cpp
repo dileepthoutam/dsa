@@ -21,9 +21,13 @@ public:
 	}
 };
 
-bool is_valid_bst(TreeNode* root) {
+bool is_valid_bst(TreeNode* root, int min_key, int max_key) {
 	if (root == nullptr)
 		return true;
+	if (root->val < min_key || root->val > max_key)
+		return false;
+	return is_valid_bst(root->left, min_key, root->val) &&
+		   is_valid_bst(root->right, root->val, max_key);
 }
 
 void solve() {

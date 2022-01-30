@@ -9,16 +9,18 @@ const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
 
-int maximum_product(vector<int>& nums) {
-
+unsigned int flipping_bits(unsigned int n) {
+	return ~n;
 }
 
 void solve() {
-	int n; cin >> n;
-	vector<int> arr(n);
+	int q; cin >> q;
+	int n;
+	while (q--) {
+		cin >> n;
+		cout << flipping_bits(n) << '\n';
+	}
 
-	for(auto &x: arr)
-		cin >> x;
 }
 
 int32_t main() {

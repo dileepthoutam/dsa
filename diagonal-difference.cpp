@@ -10,12 +10,28 @@ const int mod = 1e9 + 7;
 const int inf = 1e18;
 
 void solve() {
+	int n; cin >> n;
+	int arr[n][n];
+	for(int i=0; i<n; i++) {
+		for(int j=0; j<n; j++) {
+			cin >> arr[i][j];
+		}
+	}
 
-	unordered_map<int, int> umap;
-	umap.insert({1,2});
+	int primary = 0;
+	int secondary = 0;
 
-	if (umap.find(1) != umap.end())
-		cout << "hell\n";
+	for(int i=0; i<n; i++) {
+		primary += arr[i][i];
+	}
+
+	int i=0, j=n-1;
+	while (j >= 0 && i < n) {
+		secondary += arr[i][j];
+		j--; i++;
+	}
+
+	cout << abs(primary - secondary) << endl;
 
 }
 

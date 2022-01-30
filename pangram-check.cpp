@@ -9,13 +9,26 @@ const int maxn = 1e5 + 5;
 const int mod = 1e9 + 7;
 const int inf = 1e18;
 
+int temp[26];
+
+string pangram_check(string& s) {
+	for(char ch: s) {
+		ch = tolower(ch);
+		temp[ch-'a'] += 1;
+	}
+	
+	for(int i=0; i<26; i++) {
+		if (temp[i] == 0)
+			return "not pangram";
+	}
+	return "pangram";
+}
+
 void solve() {
+	string s; 
+	getline(cin, s);
 
-	unordered_map<int, int> umap;
-	umap.insert({1,2});
-
-	if (umap.find(1) != umap.end())
-		cout << "hell\n";
+	cout << pangram_check(s) << endl;
 
 }
 
